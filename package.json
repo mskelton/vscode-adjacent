@@ -1,0 +1,44 @@
+{
+  "name": "adjacent",
+  "displayName": "Adjacent",
+  "description": "Quickly open files in the same directory as the current file",
+  "version": "1.0.0",
+  "license": "ISC",
+  "publisher": "mskelton",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mskelton/vscode-open-url"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "icon": "resources/icon.png",
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "adjacent.quickOpen",
+        "category": "Adjacent",
+        "title": "Quick Open"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "fmt": "prettier --write \"src/**/*.ts\"",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@types/vscode": "^1.60.0",
+    "@vscode/vsce": "^3.3.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
