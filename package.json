@@ -2,7 +2,7 @@
   "name": "adjacent",
   "displayName": "Adjacent",
   "description": "Quickly open files in the same directory as the current file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "ISC",
   "publisher": "mskelton",
   "repository": {
